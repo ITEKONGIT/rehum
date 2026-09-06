@@ -24,20 +24,12 @@ Windows CMD: rehum.cmd <TO> <DATA>
 macOS/Linux: bash rehum.sh <TO> <DATA>
 ```
 
-Example:
-
-```text
-python rehum.py 0x471ece3750da237f93b8e339c536989b8978a438 0x70a08231000000000000000000000000f13918dce6f2ae689548478cb83e4cad836adb7a --offline
-```
-
-This decodes as `balanceOf(0xf13918dce6f2ae689548478cb83e4cad836adb7a)`.
-
 ## Live evidence
 
 Calldata does not identify its blockchain. Pass the correct RPC directly:
 
 ```text
-python rehum.py <TO> <DATA> --rpc-url https://your-chain-rpc.example
+python rehum.py <TO> <DATA> --rpc-url <RPC_URL>
 ```
 
 For a reusable local setup, copy `config.example.json` to the ignored `config.json` and set `rpc_url`. You can also set `REHUM_RPC_URL`.
