@@ -1,0 +1,33 @@
+[project]
+name = "rehum"
+version = "0.1.0"
+description = "Translate EVM calls into evidence-backed plain English"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+keywords = ["ethereum", "evm", "abi", "calldata", "json-rpc", "multicall"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Debuggers",
+]
+
+[project.scripts]
+rehum = "evm_call_explainer.cli:main"
+rehum-preflight = "evm_call_explainer.preflight:main"
+evm-explain = "evm_call_explainer.cli:main"
+evm-explain-preflight = "evm_call_explainer.preflight:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["evm_call_explainer*"]
+exclude = ["tests*"]

@@ -1,0 +1,9 @@
+{
+  "rpc_url": "https://your-configured-rpc.example",
+  "block_tag": "latest",
+  "execute": true,
+  "sourcify": true,
+  "signature_lookup": true,
+  "max_calls": 4096,
+  "max_payload_bytes": 4194304
+}
