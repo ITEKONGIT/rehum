@@ -21,8 +21,6 @@ classifiers = [
 [project.scripts]
 rehum = "evm_call_explainer.cli:main"
 rehum-preflight = "evm_call_explainer.preflight:main"
-evm-explain = "evm_call_explainer.cli:main"
-evm-explain-preflight = "evm_call_explainer.preflight:main"
 
 [build-system]
 requires = ["setuptools>=68"]
